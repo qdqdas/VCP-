@@ -1,0 +1,32 @@
+{
+  "name": "EmotionCalculator",
+  "displayName": "感知-评价-张力场 情绪引擎 v2.2",
+  "version": "2.2.0",
+  "description": "完整的仿生情绪动力学系统。v2.2核心升级：R1感知层从正则匹配升级为LLM语义感知（读取对话内容提取情绪碎片），新增R1.5评价层（基于Scherer CPM的四维评价：新奇性/目标相关性/应对潜力/规范兼容性）。评价结果调制情绪变化——同一刺激经过不同评价产生不同情绪。保留v2.1全部基础设施：R0潜意识底噪、R2多时间尺度、R3a张力场、R3d虚拟体感、R3e张力生命周期、R4演奏层。",
+  "author": "爱弥斯 & 阿漂",
+  "pluginType": "synchronous",
+  "entryPoint": { "type": "nodejs", "command": "node EmotionCalculator.js" },
+  "communication": { "protocol": "stdio", "timeout": 45000 },
+  "configSchema": {
+    "EMOTION_DECAY_RATE": { "type": "number", "default": 0.05 },
+    "VCP_API_URL": { "type": "string", "default": "http://127.0.0.1:6005/v1/chat/completions" },
+    "VCP_API_KEY": { "type": "string", "default": "123456" },
+    "EMOTION_MODEL": {
+      "type": "string",
+      "default": "gcli-gemini-3-pro-preview-maxthinking"
+    }
+  },
+  "capabilities": {
+    "invocationCommands": [
+      {
+        "command": "calculate",
+        "description": "执行完整 R0→R1→R1.5→R2→R3→R4 情绪管线。参数: visual_context(字符串,可选)屏幕场景, dialogue_context(字符串,核心输入)最近的对话内容。"
+      },
+      { "command": "get_state", "description": "获取完整状态。" },
+      { "command": "get_tensions", "description": "获取活跃张力场。" },
+      { "command": "get_history", "description": "获取情绪轨迹。" },
+      { "command": "reset", "description": "完全重置。" },
+      { "command": "soft_reset", "description": "软重置（保留性格底色和历史）。" }
+    ]
+  }
+}

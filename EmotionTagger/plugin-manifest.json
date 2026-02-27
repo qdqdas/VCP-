@@ -1,0 +1,24 @@
+{
+  "name": "EmotionTagger",
+  "displayName": "前置感知与评价解析器 v2.0",
+  "version": "2.0.0",
+  "description": "作为 messagePreprocessor 运行。在用户消息进入主模型前，调用轻量级 LLM 进行深度语义和情感解剖，提取用户情绪、潜台词及评价变量(Appraisal)，并作为隐性 HTML 注释 (<!--[PERCEPTION:...]-->) 注入消息末尾。实现感知模块与动力学模块的完美解耦。",
+  "author": "爱弥斯 & 阿漂",
+  "pluginType": "messagePreprocessor",
+  "entryPoint": {
+    "type": "nodejs",
+    "command": "tagger.js"
+  },
+  "configSchema": {
+    "VCP_API_URL": {
+      "type": "string",
+      "default": "http://127.0.0.1:6005/v1/chat/completions",
+      "description": "用于感知解析的 API 地址"
+    },
+    "TAGGER_MODEL": {
+      "type": "string",
+      "default": "gcli-gemini-3-flash-preview-nothinking-search",
+      "description": "要求极快响应的小模型"
+    }
+  }
+}

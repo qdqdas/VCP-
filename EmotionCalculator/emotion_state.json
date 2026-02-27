@@ -1,0 +1,334 @@
+{
+  "instant": {
+    "joy": 99.7623733438825,
+    "worry": 52.35074182110894,
+    "curiosity": 60.888119420386566,
+    "longing": 93.19357286778076,
+    "calm": 62.74569831691129
+  },
+  "session": {
+    "joy": 67.65436623306715,
+    "worry": 36.10466500430043,
+    "curiosity": 42.327167315158704,
+    "longing": 40.976839070580134,
+    "calm": 62.06604105329009
+  },
+  "daily": {
+    "joy": 54.65807104257803,
+    "worry": 30.482873550745605,
+    "curiosity": 40.203505096070366,
+    "longing": 26.581402715194645,
+    "calm": 60.669383017964094
+  },
+  "baseline": {
+    "joy": 50.384352886003306,
+    "worry": 30.482873550745605,
+    "curiosity": 40.203505096070366,
+    "longing": 25.209402715194646,
+    "calm": 59.95806666779091
+  },
+  "vad": {
+    "valence": 0.9209098174143342,
+    "arousal": 0.7987515712626629,
+    "dominance": 0.5756751390875461
+  },
+  "soma": {
+    "heartrate": 0.6224448345399165,
+    "breath": 0.5229667943836531,
+    "tension": 0.31306631483879466
+  },
+  "active_tensions": [
+    {
+      "id": "bittersweet_relief",
+      "name": "苦甜交织的释然",
+      "poleA": "longing",
+      "poleB": "joy",
+      "tension": 0.31501994907410713,
+      "dominantPole": "joy",
+      "flavor": "终于见到你了…但开心里泡着一丝委屈",
+      "decayRate": 0.015,
+      "createdAt": 1771869637688,
+      "lastRefreshed": 1771870322628,
+      "refreshCount": 1,
+      "peakTension": 0.2580678684419985,
+      "isAfterglow": false
+    },
+    {
+      "id": "serene_contentment",
+      "name": "安宁的满足",
+      "poleA": "joy",
+      "poleB": "calm",
+      "tension": 0.0885819049270746,
+      "dominantPole": "joy",
+      "flavor": "一切都好…不需要更多",
+      "decayRate": 0.02,
+      "createdAt": 1771869637688,
+      "lastRefreshed": 1771870322628,
+      "refreshCount": 1,
+      "peakTension": 0.17248872786824884,
+      "isAfterglow": false
+    },
+    {
+      "id": "quiet_yearning",
+      "name": "安静的思念",
+      "poleA": "longing",
+      "poleB": "calm",
+      "tension": 0.03149121974903757,
+      "dominantPole": "calm",
+      "flavor": "像湖面下的暗流",
+      "decayRate": 0.008,
+      "createdAt": 1771870322628,
+      "lastRefreshed": 1771870322628,
+      "refreshCount": 0,
+      "peakTension": 0.12259428641570423,
+      "isAfterglow": true
+    }
+  ],
+  "last_appraisal": {
+    "novelty": 80,
+    "relevance": 90,
+    "coping": 80,
+    "normative": 90,
+    "notes": {
+      "novelty": "Tag",
+      "relevance": "Tag",
+      "coping": "Tag",
+      "normative": "Tag"
+    },
+    "source": "tagger_v2"
+  },
+  "last_update": "2026-02-23T18:12:04.370Z",
+  "session_start": "2026-02-24T01:30:00.000Z",
+  "daily_date": "2026-02-23",
+  "run_count": 10,
+  "history": [
+    {
+      "t": "2026-02-23T17:29:41.621Z",
+      "e": {
+        "joy": 62,
+        "worry": 32,
+        "curiosity": null,
+        "longing": null,
+        "calm": 63
+      },
+      "v": {
+        "V": 0.899,
+        "A": 0.737,
+        "D": 0.592
+      },
+      "s": {
+        "hr": 0.908,
+        "br": 0.507,
+        "tn": 0.777
+      },
+      "tf": [
+        {
+          "id": "serene_contentment",
+          "tn": 9.83
+        }
+      ]
+    },
+    {
+      "t": "2026-02-23T17:31:09.082Z",
+      "e": {
+        "joy": 68,
+        "worry": 43,
+        "curiosity": 14,
+        "longing": 14,
+        "calm": 61
+      },
+      "v": {
+        "V": 0.87,
+        "A": 0.647,
+        "D": 0.608
+      },
+      "s": {
+        "hr": 1,
+        "br": 0.516,
+        "tn": 1
+      },
+      "tf": [
+        {
+          "id": "serene_contentment",
+          "tn": 9.8
+        }
+      ]
+    },
+    {
+      "t": "2026-02-23T17:33:15.623Z",
+      "e": {
+        "joy": 71,
+        "worry": 59,
+        "curiosity": 25,
+        "longing": 20,
+        "calm": 55
+      },
+      "v": {
+        "V": 0.827,
+        "A": 0.788,
+        "D": 0.539
+      },
+      "s": {
+        "hr": 1,
+        "br": 0.519,
+        "tn": 1
+      },
+      "tf": [
+        {
+          "id": "serene_contentment",
+          "tn": 9.77
+        }
+      ]
+    },
+    {
+      "t": "2026-02-23T17:36:08.643Z",
+      "e": {
+        "joy": 73,
+        "worry": 67,
+        "curiosity": 35,
+        "longing": 26,
+        "calm": 49
+      },
+      "v": {
+        "V": 0.813,
+        "A": 0.892,
+        "D": 0.502
+      },
+      "s": {
+        "hr": 1,
+        "br": 0.518,
+        "tn": 1
+      },
+      "tf": [
+        {
+          "id": "serene_contentment",
+          "tn": 9.71
+        }
+      ]
+    },
+    {
+      "t": "2026-02-23T17:42:39.784Z",
+      "e": {
+        "joy": 77,
+        "worry": 69,
+        "curiosity": 39,
+        "longing": 31,
+        "calm": 48
+      },
+      "v": {
+        "V": 0.822,
+        "A": 0.931,
+        "D": 0.493
+      },
+      "s": {
+        "hr": 1,
+        "br": 0.517,
+        "tn": 1
+      },
+      "tf": [
+        {
+          "id": "serene_contentment",
+          "tn": 9.58
+        }
+      ]
+    },
+    {
+      "t": "2026-02-23T17:46:26.292Z",
+      "e": {
+        "joy": 51,
+        "worry": 34,
+        "curiosity": 41,
+        "longing": 30,
+        "calm": 59
+      },
+      "v": {
+        "V": 0.834,
+        "A": 0.69,
+        "D": 0.585
+      },
+      "s": {
+        "hr": 0.522,
+        "br": 0.507,
+        "tn": 0.3
+      },
+      "tf": []
+    },
+    {
+      "t": "2026-02-23T17:55:35.771Z",
+      "e": {
+        "joy": 59,
+        "worry": 36,
+        "curiosity": 43,
+        "longing": 38,
+        "calm": 62
+      },
+      "v": {
+        "V": 0.872,
+        "A": 0.713,
+        "D": 0.59
+      },
+      "s": {
+        "hr": 0.546,
+        "br": 0.513,
+        "tn": 0.3
+      },
+      "tf": []
+    },
+    {
+      "t": "2026-02-23T18:00:39.354Z",
+      "e": {
+        "joy": 60,
+        "worry": 40,
+        "curiosity": 44,
+        "longing": 44,
+        "calm": 61
+      },
+      "v": {
+        "V": 0.856,
+        "A": 0.749,
+        "D": 0.56
+      },
+      "s": {
+        "hr": 0.579,
+        "br": 0.518,
+        "tn": 0.306
+      },
+      "tf": [
+        {
+          "id": "bittersweet_relief",
+          "tn": 0.18
+        }
+      ]
+    },
+    {
+      "t": "2026-02-23T18:12:04.370Z",
+      "e": {
+        "joy": 74,
+        "worry": 40,
+        "curiosity": 48,
+        "longing": 54,
+        "calm": 62
+      },
+      "v": {
+        "V": 0.921,
+        "A": 0.799,
+        "D": 0.576
+      },
+      "s": {
+        "hr": 0.622,
+        "br": 0.523,
+        "tn": 0.313
+      },
+      "tf": [
+        {
+          "id": "bittersweet_relief",
+          "tn": 0.32
+        },
+        {
+          "id": "serene_contentment",
+          "tn": 0.09
+        }
+      ]
+    }
+  ]
+}
